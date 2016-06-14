@@ -1,4 +1,5 @@
 const mysql = require('mysql-promise'),
+  _ = require('lodash'),
   singletonsByKey = {};
 
 module.exports = {
