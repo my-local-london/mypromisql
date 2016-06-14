@@ -1,0 +1,28 @@
+{
+  "name": "mypromisql",
+  "version": "0.0.1",
+  "description": "A Promise-based MySql library based on https://www.npmjs.com/package/mysql-promise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/my-local-london/mypromisql.git"
+  },
+  "keywords": [
+    "mysql",
+    "promise",
+    "helper"
+  ],
+  "author": "Mat Carey <mat@my-local.london>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/my-local-london/mypromisql/issues"
+  },
+  "homepage": "https://github.com/my-local-london/mypromisql#readme",
+  "dependencies": {
+    "mysql-promise": "^3.0.0",
+    "mysql2": "^1.0.0-rc.4"
+  }
+}
