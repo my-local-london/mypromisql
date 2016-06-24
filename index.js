@@ -12,19 +12,19 @@ module.exports = {
     const db = singletonsByKey[key];
     return _.extend(db, {
       q: function () {
-        db.query.apply(db, arguments)
+        return db.query.apply(db, arguments)
           .then(function (result) {
             return result[0];
           })
       },
       querySingleRow: function () {
-        db.query.apply(db, arguments)
+        return db.query.apply(db, arguments)
           .then(function (result) {
             return result[0] && result[0][0];
           })
       },
       count: function () {
-        db.query.apply(db, arguments)
+        return db.query.apply(db, arguments)
           .then(function (result) {
             return result[0] && result[0][0] && result[0][0].count;
           })
